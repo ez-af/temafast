@@ -10,8 +10,8 @@
   <meta content="Артемий Фаст" name="author">
 
   <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png">
   <link rel="icon" type="image/svg" href="assets/img/favicon/favicon.svg">
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
   <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="assets/img/favicon/site.webmanifest">
 
@@ -34,11 +34,15 @@
 
 <body class="index-page">
 
+  <div class="fluid-effect-bg">
+    <canvas id="fluid"></canvas>
+  </div>
+
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/photo/profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="/" class="logo d-flex align-items-center justify-content-center">
@@ -76,8 +80,6 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Артемий Фаст</h2>
         <p><span class="typed" data-typed-items="Аналитик, Разработчик, Дизайнер, Маркетолог"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
@@ -97,7 +99,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/photo/profile-big.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
             <h2>UI/UX Designer &amp; Web Developer.</h2>
@@ -503,7 +505,7 @@
 
     <div class="container">
       <div class="credits">
-        <a href="https://t.me/artemyfast">Артемий Фаст</a> © 2025
+        2025 © <a href="https://t.me/artemyfast">Артемий Фаст</a>
       </div>
     </div>
 
@@ -526,6 +528,8 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/fluid-cursor.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
