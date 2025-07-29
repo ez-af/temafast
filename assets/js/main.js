@@ -28,9 +28,7 @@
     });
   });
 
-  /**
-   * Preloader
-   */
+  //Preloader
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -38,9 +36,7 @@
     });
   }
 
-  /**
-   * Scroll top button
-   */
+  //Scroll top button
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -76,9 +72,9 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 88,
+      backSpeed: 36,
+      backDelay: 1200
     });
   }
 
