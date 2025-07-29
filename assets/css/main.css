@@ -1,5 +1,5 @@
 /* Portfolio fade and center effect for filter-app */
-.portfolio-item.filter-app .portfolio-content {
+.portfolio-item .portfolio-content {
   position: relative;
   width: 100%;
   height: 100%;
@@ -7,8 +7,9 @@
   align-items: stretch;
   border-radius: 15px;
   overflow: hidden;
+  background: linear-gradient(180deg, #00000020, #000000ee);
 }
-.portfolio-item.filter-app .portfolio-info {
+.portfolio-item .portfolio-info {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0);
+  background: linear-gradient(180deg, #00000020, #000000ee);
   color: #fff;
   opacity: 0;
   transition: background 0.3s, opacity 0.3s;
@@ -28,16 +29,16 @@
   border-radius: 15px;
   overflow: hidden;
 }
-.portfolio-item.filter-app .portfolio-content:hover .portfolio-info {
-  background: rgba(0,0,0,0.8);
+.portfolio-item .portfolio-content:hover .portfolio-info {
+  background: linear-gradient(180deg, #00000020, #000000ee);
   opacity: 1;
 }
-.portfolio-item.filter-app .portfolio-info p {
+.portfolio-item .portfolio-info p {
   margin: 0;
   font-size: 1.2rem;
   width: 100%;
   text-align: center;
-  height:50%
+  height:14%
 }
 /* Fonts */
 :root {
@@ -468,12 +469,12 @@ section,
 
 /* Global Section Titles */
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 36px;
   position: relative;
 }
 
 .section-title h2 {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 400;
   margin-bottom: 2px;
   position: relative;
@@ -725,7 +726,6 @@ section,
   inset: 0;
   z-index: 6;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
   padding: 15px;
 }
 
@@ -735,7 +735,6 @@ section,
   font-weight: 400;
   color: #fff;
   display: inline-block;
-  background-color: var(--accent-color);
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -746,8 +745,8 @@ section,
   left: 0;
   right: 0;
   font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  color: #fff;
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link,
@@ -759,11 +758,6 @@ section,
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
-}
-
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--accent-color);
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
@@ -798,6 +792,12 @@ section,
   display: inline-block;
   padding: 20px 30px 20px 30px;
   border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  .contact-email-link {
+  font-size: 1.2rem;
+  }
 }
 
 .contact-social-links {
