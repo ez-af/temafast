@@ -759,10 +759,10 @@ section,
   transform: scale(1.05);
 }
 
-
 /* Contact Section*/
 .contact-slot {
-  min-height: 120px;
+  margin:1rem;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -781,6 +781,12 @@ section,
 @media (max-width: 991px) {
   .contact-email-link {
   font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-slot {
+  width: 92%;
   }
 }
 
@@ -811,4 +817,16 @@ section,
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin-top: 0.7rem;
+  background-color: var(--default-color);
+  border: var(--default-color);
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  border: var(--accent-color);
 }
